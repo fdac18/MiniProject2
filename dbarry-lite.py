@@ -8,21 +8,17 @@ import requests
 
 dbname = "fdac18mp2" #please use this database
 collname = "glprj_dbarry" #please modify so you store data in your collection
-# beginning page index
-begin = "0"
+
 client = pymongo.MongoClient()
 
 db = client[dbname]
 coll = db[collname]
 
+pgnum = 0
+beginurl = "https://gitlab.com/search?page=" + str(pgnum) + "&scope=&search=" + word + "&snippets="
 
-beginurl = "https://gitlab.com/api/v4/projects?archived=false&membership=false&order_by=created_at&owned=false&page=" + begin + \
-    "&per_page=99&simple=false&sort=desc&starred=false&statistics=false&with_custom_attributes=false&with_issues_enabled=false&with_merge_requests_enabled=false"
+for i in 
 
-
-gleft = 0
-
-header = {'per_page': 99}
 
 # check remaining query chances for rate-limit restriction
 def wait(left):
