@@ -1,50 +1,50 @@
-https://sourceforge.net/projects/link-module-generator/
-https://sourceforge.net/projects/littlecleaner/
-https://sourceforge.net/projects/logrotatewin/
-https://sourceforge.net/projects/libcsdbg/
-https://sourceforge.net/projects/littleprojectma/
-https://sourceforge.net/projects/lightweight-model-db/
-https://sourceforge.net/projects/linedda/
-https://sourceforge.net/projects/libuemf/
-https://sourceforge.net/projects/lilsoftstats/
-https://sourceforge.net/projects/lolfs/
-https://sourceforge.net/projects/littlehexdb/
-https://sourceforge.net/projects/little-system-cleaner/
-https://sourceforge.net/projects/libreavconverter/
-https://sourceforge.net/projects/latency-fix/
-https://sourceforge.net/projects/littlebluebook/
-https://sourceforge.net/projects/lstc/
-https://sourceforge.net/projects/privacy-cleaner/
-https://sourceforge.net/projects/lilalarmclock/
-https://sourceforge.net/projects/lildiskcleaner/
-https://sourceforge.net/projects/little-disk-defrag/
-https://sourceforge.net/projects/novicelive/
-https://sourceforge.net/projects/lilregdefrag/
-https://sourceforge.net/projects/loic/
-https://sourceforge.net/projects/livestreamerfortwitchtv/
-https://sourceforge.net/projects/lilsis/
-https://sourceforge.net/projects/lgme/
-https://sourceforge.net/projects/laser/
-https://sourceforge.net/projects/littlestocktick/
-https://sourceforge.net/projects/laststandeb/
-https://sourceforge.net/projects/lagrangesimulat/
-https://sourceforge.net/projects/littlediary/
-https://sourceforge.net/projects/loreeditor/
-https://sourceforge.net/projects/littlepages/
-https://sourceforge.net/projects/lifocon/
-https://sourceforge.net/projects/laberbox/
-https://sourceforge.net/projects/tll.berlios/
-https://sourceforge.net/projects/xxpkmj/
-https://sourceforge.net/projects/littleindietba/
-https://sourceforge.net/projects/lehi/
-https://sourceforge.net/projects/lagrangemotocro/
-https://sourceforge.net/projects/labmonkey/
-https://sourceforge.net/projects/localchat/
-https://sourceforge.net/projects/ljstat/
-https://sourceforge.net/projects/lolrecitemedito/
-https://sourceforge.net/projects/lang-lisp.berlios/
-https://sourceforge.net/projects/lmce/
-https://sourceforge.net/projects/luke3d/
-https://sourceforge.net/projects/lge/
-https://sourceforge.net/projects/lasthope-pygame/
-https://sourceforge.net/projects/lgmddownloadmsi/
+svn checkout https://svn.code.sf.net/p/link-module-generator/code/ link-module-generator-code
+svn checkout https://svn.code.sf.net/p/littleprojectma/codesvn/trunk littleprojectma-codesvn
+git clone https://git.code.sf.net/p/lightweight-model-db/code lightweight-model-db-code
+git clone https://git.code.sf.net/p/lolfs/code lolfs-code
+git clone https://git.code.sf.net/p/littlehexdb/code littlehexdb-code
+git clone https://github.com/little-apps/little-system-cleaner little-system-cleaner-code
+git clone https://git.code.sf.net/p/littlebluebook/code littlebluebook-code
+svn checkout https://svn.code.sf.net/p/lstc/code/trunk lstc-code
+git clone https://git.code.sf.net/p/little-disk-defrag/code little-disk-defrag-code
+git clone https://git.code.sf.net/p/novicelive/code novicelive-code
+git clone https://git.code.sf.net/p/livestreamerfortwitchtv/code livestreamerfortwitchtv-code
+svn checkout https://svn.code.sf.net/p/lilsis/code/trunk lilsis-code
+git clone https://git.code.sf.net/p/littlestocktick/code littlestocktick-code
+git clone https://git.code.sf.net/p/laststandeb/code laststandeb-code
+git clone https://git.code.sf.net/p/loreeditor/code loreeditor-code
+git clone https://git.code.sf.net/p/littlepages/code littlepages-code
+svn checkout https://svn.code.sf.net/p/laberbox/code/trunk laberbox-code
+git clone https://git.code.sf.net/p/littleindietba/code littleindietba-code
+svn checkout https://svn.code.sf.net/p/lehi/code-0/trunk lehi-code-0
+svn checkout https://svn.code.sf.net/p/lagrangemotocro/code/ lagrangemotocro-code
+git clone https://git.code.sf.net/p/labmonkey/code labmonkey-code
+git clone https://git.code.sf.net/p/localchat/code localchat-code
+git clone https://git.code.sf.net/p/lolrecitemedito/code lolrecitemedito-code
+git clone https://git.code.sf.net/p/lmce/lmce lmce-lmce
+git clone https://git.code.sf.net/p/luke3d/code luke3d-code
+git clone https://git.code.sf.net/p/lge/code lge-code
+git clone https://git.code.sf.net/p/lasthope-pygame/code lasthope-pygame-code
+git clone https://git.code.sf.net/p/lite-os/code lite-os-code
+git clone https://git.code.sf.net/p/kthames/code kthames-code
+git clone https://git.code.sf.net/p/little-kingdom/code little-kingdom-code
+svn checkout https://svn.code.sf.net/p/lircexec/code/trunk lircexec-code
+git clone https://git.code.sf.net/p/lullaby/code lullaby-code
+svn checkout https://svn.code.sf.net/p/little-etl/code/trunk little-etl-code
+git clone https://git.code.sf.net/p/luweos/code luweos-code
+git clone https://git.code.sf.net/p/lfhb/code lfhb-code
+svn checkout https://svn.code.sf.net/p/littleharvest/code/ littleharvest-code
+hg clone http://hg.code.sf.net/p/littleracer/code littleracer-code
+svn checkout https://svn.code.sf.net/p/lfll/code/ lfll-code
+svn checkout https://svn.code.sf.net/p/learnsvn/code/ learnsvn-code
+svn checkout https://svn.code.sf.net/p/lac/code/ lac-code
+svn checkout https://svn.code.sf.net/p/kagnar/code/trunk kagnar-code
+svn checkout https://svn.code.sf.net/p/woozlegames/code/ woozlegames-code
+svn checkout https://svn.code.sf.net/p/latasgame/code/ latasgame-code
+svn checkout https://svn.code.sf.net/p/littleuml/code/ littleuml-code
+svn checkout https://svn.code.sf.net/p/littletwiddha/code/ littletwiddha-code
+svn checkout https://svn.code.sf.net/p/libsupergba/code/ libsupergba-code
+svn checkout https://svn.code.sf.net/p/lchain/code/ lchain-code
+hg clone http://hg.code.sf.net/p/lirt/code lirt-code
+svn checkout https://svn.code.sf.net/p/littlebigtank/code/ littlebigtank-code
+svn checkout https://svn.code.sf.net/p/l2a/code/ l2a-code
