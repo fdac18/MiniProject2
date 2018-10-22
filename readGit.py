@@ -14,7 +14,7 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_audris'
+collName = 'releases_eezell3'
 coll = db [collName]
 def wait (left):
   while (left < 20):
