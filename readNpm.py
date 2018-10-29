@@ -9,7 +9,8 @@ client = pymongo .MongoClient (host="da1.eecs.utk.edu")
 db = client ['fdac18mp2']
 
 #replace audris with your utkid
-coll = db['npm_audris']
+coll = db['npm_adesai6']
+x = coll.delete_many({})
 
 pre = 'https://api.npms.io/v2/package/'
 
