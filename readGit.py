@@ -1,4 +1,3 @@
-#!usr/bin/env python3
 import sys, re, pymongo, json, time
 import datetime
 from requests.auth import HTTPBasicAuth
