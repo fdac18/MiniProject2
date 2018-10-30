@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import sys, re, pymongo, json, time
 import datetime
 from requests.auth import HTTPBasicAuth
@@ -16,7 +14,7 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_mousavi'
+collName = 'releases_audris'
 coll = db [collName]
 def wait (left):
   while (left < 20):
@@ -61,9 +59,10 @@ def cmp_rel (url):
     v = get (url)
   except Exception as e:
     sys.stderr.write ("Could not get:" + url + ". Exception:" + str(e) + "\n")
-
-  if 'ahead_by' in v and 'behind_by' in v : 
-      print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
+  if 'ahead_by' in v and 'behind_by' in v:
+    print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
+  else:
+    sys.stderr.write ("Could not compare releases for: " + url + "; There exists no common ancestor between the two versions." + "\n")
 
 
 p2r = {}
