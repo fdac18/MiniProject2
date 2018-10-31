@@ -14,7 +14,7 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_audris'
+collName = 'releases_ssteinb2'
 coll = db [collName]
 def wait (left):
   while (left < 20):
@@ -63,7 +63,6 @@ def cmp_rel (url):
     print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
   else:
     sys.stderr.write ("Could not compare releases for: " + url + "; There exists no common ancestor between the two versions." + "\n")
-
 
 p2r = {}
 for l in sys.stdin.readlines():
