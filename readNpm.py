@@ -2,9 +2,9 @@ import sys, json, pymongo, time, datetime, re, requests
 from urllib.parse import quote
 
 #for da2 
-#client = pymongo .MongoClient (host="da1.eecs.utk.edu")
+client = pymongo .MongoClient (host="da1.eecs.utk.edu")
 #for gcloud machine
-client = pymongo .MongoClient ()
+#client = pymongo .MongoClient ()
 
 db = client ['fdac18mp2']
 
@@ -31,7 +31,7 @@ for pname in sys.stdin.readlines():
     k1 = k.replace('$', 'DOLLARSIGN')
     k1 = k1.replace('.', 'PERIODSIGN')
     r1 [k1] = result_json [k]
-   coll .insert_one (r1, check_keys=False)
+   coll .insert_one (r1)
    output (0, pname)
   except:
    e = sys.exc_info()[0]

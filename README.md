@@ -15,7 +15,10 @@ where XX is between 0 and 33: to find your number look at the list below.
 ```
 zcat /data/NPMvulnerabilities/NPMpkglist/NPMpkglist_XX.gz | python3 readNpm.py
 ```
-1. Identify the packages that have GH repos (based on the stored info)
+Please keep in mind that /data/NPMvulnerabilities/ is not on gcloud, only 
+on da2, so please run it on da2 or copy NPMpkglist_XX.gz to gcloud.
+
+2. Identify the packages that have GH repos (based on the stored info)
 ```
 import pymongo, json, sys
 client = pymongo.MongoClient ()
@@ -33,17 +36,19 @@ for r in coll.find():
           r = r['url']
           print (r)
 ```
-Suppose the above code is in extrNpm.py. To output the urls:
+The above code is in extrNpm.py. To output the urls:
 ```
 python3 extrNpm.py > myurls
 ```
 
-2. For each such package, get a list of all releases.  Example file is readGit.py (you can use it with the snippet above to get releases). It reads from standard input and populates
+3. For each such package, get a list of all releases.  Example file is readGit.py (you can use it with the snippet above to get releases). It reads from standard input and populates
 releases_yourutkid collection. Reference to Github API: 
 ```
-https://developer.github.com/v3/repos/releases/
+cat myurls | python3 readGit.py 
+#or
+python3 readGit.py < myurls
 ```
-3. Extract releases from mongodb
+4. Extract releases from mongodb
 ```
 import pymongo, json, sys
 client = pymongo.MongoClient (host="da1")
@@ -57,13 +62,13 @@ for r in coll.find():
       if 'tag_name' in v:
         print (n+';'+v['tag_name'])
 ```          
-Suppose the above code is in extrRels.py. To output the urls:
+The above code is in extrRels.py. To output the urls:
 ```
-cat myurls | python3 extrRels.py > myrels
+python3 extrRels.py > myrels
 ```
 
 
-4. Find no. of commits between the latest and other releases.
+5. Find no. of commits between the latest and other releases.
 
 For example:
     E.g. https://api.github.com/repos/webpack-contrib/html-loader/compare/v0.5.4...master or https://api.github.com/repos/git/git/compare/v2.2.0-rc1...v2.2.0-rc2
@@ -77,7 +82,7 @@ For example:
 ```
 For example
 ```
-cat myrels | python3 compareRels.py
+cat myrels | python3 compareRels.py > myrels.cmp
 ```
  
 | number  | GitHub Username | NetID | Name |
