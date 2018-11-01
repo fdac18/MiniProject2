@@ -1,7 +1,7 @@
 import pymongo, json, sys
 client = pymongo.MongoClient (host="da1")
 db = client ['fdac18mp2']
-id = "audris"
+id = "rhossai2"
 coll = db [ 'releases_' + id]
 for r in coll.find():
   n = r['name']
