@@ -14,8 +14,11 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_audris'
+collName = 'releases_eherron5'
 coll = db [collName]
+
+print('fire')
+
 def wait (left):
   while (left < 20):
     l = requests .get('https://api.github.com/rate_limit', auth=(login,passwd))

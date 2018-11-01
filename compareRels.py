@@ -14,7 +14,7 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_audris'
+collName = 'releases_eherron5'
 coll = db [collName]
 def wait (left):
   while (left < 20):
@@ -59,8 +59,12 @@ def cmp_rel (url):
     v = get (url)
   except Exception as e:
     sys.stderr.write ("Could not get:" + url + ". Exception:" + str(e) + "\n")
-  print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
-
+  try:
+    rel_ahead = v['ahead_by']
+    rel_behind = v['behind_by'] 
+    print ('Release ' + url + ' behind by ' + str(v['behind_by']) + ' commits.')
+  except Exception as e:
+    sys.stderr.write ("Release attribute not found for " + url + ". Exception:" + str(e) + "\n")
 
 p2r = {}
 for l in sys.stdin.readlines():
