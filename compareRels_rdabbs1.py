@@ -14,7 +14,7 @@ headers = {'Accept': 'application/vnd.github.v3.star+json'}
 headers = {'Accept': 'application/vnd.github.hellcat-preview+json'}
 
 db = client['fdac18mp2'] # added in class
-collName = 'releases_audris'
+collName = 'releases_rdabbs1'
 coll = db [collName]
 def wait (left):
   while (left < 20):
@@ -59,7 +59,10 @@ def cmp_rel (url):
     v = get (url)
   except Exception as e:
     sys.stderr.write ("Could not get:" + url + ". Exception:" + str(e) + "\n")
-  print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
+  if 'ahead_by' in v and 'behind_by' in v:
+    print (url+';'+str(v['ahead_by'])+';'+str(v['behind_by']))
+  else:
+    sys.stderr.write ("Could not compare releases for: " + url + "; There exists no common ancestor between the two versions." + "\n")
 
 
 p2r = {}
@@ -77,4 +80,3 @@ for p in p2r:
     for i in range(1,len (rs)):
       url = 'https://api.github.com/repos/'+p+'/compare/' + rs[i-1] + '...' + rs[i]
       cmp_rel (url)
-
