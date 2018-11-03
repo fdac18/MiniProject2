@@ -6,32 +6,84 @@
 NPM package list
 
 The list of packages is unique to each one of you:
-/data/shared/NPMvulnerabilities/NPMpkglist/NPMpkglist_XX.gz
+/data/NPMvulnerabilities/NPMpkglist/NPMpkglist_XX.gz
 where XX is between 0 and 33: to find your number look at the list below. 
 
 ### Goal:
 1. Download and store data from npm on all your packages on mongodb database:
-    fdac18mp2, collection: ghrel_yourutkid
-1. Identify the packages that have GH repos (based on the stored info)
+    fdac18mp2, collection: npm_yourutkid, the example code is in readNpm.py
 ```
-# it has to contain value in
-record["collected"]["metadata"]["repository"]["url"]
-"git+https://github.com//0-.git"
+zcat /data/NPMvulnerabilities/NPMpkglist/NPMpkglist_XX.gz | python3 readNpm.py
 ```
-2. For each such package, get a list of all releases.  Use Github API: 
+Please keep in mind that /data/NPMvulnerabilities/ is not on gcloud, only 
+on da2, so please run it on da2 or copy NPMpkglist_XX.gz to gcloud.
+
+2. Identify the packages that have GH repos (based on the stored info)
 ```
-https://developer.github.com/v3/repos/releases/
+import pymongo, json, sys
+client = pymongo.MongoClient ()
+db = client ['fdac18mp2']
+id = sys.argv[1] #your utkid
+coll = db [ 'npm_' + id]
+for r in coll.find():
+  if 'collected' in r:
+    r = r['collected']
+    if 'metadata' in r:
+      r = r['metadata']
+      if 'repository' in r:
+        r = r['repository']
+        if 'url' in r:
+          r = r['url']
+          print (r)
 ```
-3. Find no. of commits between the latest and other releases.
+The above code is in extrNpm.py. To output the urls:
+```
+python3 extrNpm.py > myurls
+```
+
+3. For each such package, get a list of all releases.  Example file is readGit.py (you can use it with the snippet above to get releases). It reads from standard input and populates
+releases_yourutkid collection. Reference to Github API: 
+```
+cat myurls | python3 readGit.py 
+#or
+python3 readGit.py < myurls
+```
+4. Extract releases from mongodb
+```
+import pymongo, json, sys
+client = pymongo.MongoClient (host="da1")
+db = client ['fdac18mp2']
+id = "audris"
+coll = db [ 'releases_' + id]
+for r in coll.find():
+  n = r['name']
+  if 'values' in r:
+    for v in r['values']:
+      if 'tag_name' in v:
+        print (n+';'+v['tag_name'])
+```          
+The above code is in extrRels.py. To output the urls:
+```
+python3 extrRels.py > myrels
+```
+
+
+5. Find no. of commits between the latest and other releases.
 
 For example:
     E.g. https://api.github.com/repos/webpack-contrib/html-loader/compare/v0.5.4...master or https://api.github.com/repos/git/git/compare/v2.2.0-rc1...v2.2.0-rc2
     More resource: https://stackoverflow.com/questions/26925312/github-api-how-to-compare-2-commits (look for comparing the tags in the answer)
     Get the data from the json, look for something like to get no. of commits between releases
+```    
  "status": "ahead",
  "ahead_by": 24,
  "behind_by": 0,
  "total_commits": 24,
+```
+For example
+```
+cat myrels | python3 compareRels.py > myrels.cmp
+```
  
 | number  | GitHub Username | NetID | Name |
 |:-:|:-:|:-:|---|
