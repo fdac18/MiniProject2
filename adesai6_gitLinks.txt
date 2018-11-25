@@ -1,0 +1,101 @@
+git clone https://git.code.sf.net/p/m-artemis/code m-artemis-code
+git clone https://git.code.sf.net/p/m-e-s/code m-e-s-code
+git clone https://git.code.sf.net/p/menv/code menv-code
+git clone https://git.code.sf.net/p/mfacebookchat/code mfacebookchat-code
+git clone https://git.code.sf.net/p/mplayerplus/code mplayerplus-code
+git clone https://git.code.sf.net/p/msusb/code msusb-code
+git clone https://git.code.sf.net/p/mstickynotes/code mstickynotes-code
+git clone https://git.code.sf.net/p/mande/code mande-code
+git clone https://git.code.sf.net/p/m-s-fashion/code m-s-fashion-code
+git clone https://git.code.sf.net/p/mcare/code mcare-code
+git clone https://git.code.sf.net/p/mconnectmedia/code mconnectmedia-code
+git clone https://git.code.sf.net/p/magentofeatured/code magentofeatured-code
+git clone https://git.code.sf.net/p/m-converter/code m-converter-code
+git clone https://git.code.sf.net/p/mdsemanticcom/code mdsemanticcom-code
+git clone https://git.code.sf.net/p/mnu-editor/code mnu-editor-code
+git clone https://git.code.sf.net/p/m-life/code m-life-code
+git clone https://git.code.sf.net/p/mpqrecompanalyzer/code mpqrecompanalyzer-code
+git clone https://git.code.sf.net/p/mstudio/code mstudio-code
+git clone https://git.code.sf.net/p/mvisualisis/code mvisualisis-code
+git clone https://git.code.sf.net/p/mscopeportablea/code mscopeportablea-code
+git clone https://git.code.sf.net/p/masskiranalyzer/code masskiranalyzer-code
+git clone https://git.code.sf.net/p/maxive/code maxive-code
+git clone https://git.code.sf.net/p/mgescan/code mgescan-code
+git clone https://git.code.sf.net/p/m-g-r/code m-g-r-code
+git clone https://git.code.sf.net/p/mlcrypt/code mlcrypt-code
+git clone https://git.code.sf.net/p/m-o-e/code m-o-e-code
+git clone https://git.code.sf.net/p/ms2analyzer/code ms2analyzer-code
+git clone https://git.code.sf.net/p/mumal2/code mumal2-code
+git clone https://git.code.sf.net/p/mx-terminal/code mx-terminal-code
+git clone https://git.code.sf.net/p/macosxbooting/code macosxbooting-code
+git clone https://git.code.sf.net/p/madedit-mod/code madedit-mod-code
+git clone https://git.code.sf.net/p/magefileupload/code magefileupload-code
+git clone https://git.code.sf.net/p/mahindra-india/code mahindra-india-code
+git clone https://git.code.sf.net/p/maitra/code maitra-code
+git clone https://git.code.sf.net/p/maninthemaze/code maninthemaze-code
+git clone https://git.code.sf.net/p/matlab2c/code matlab2c-code
+git clone https://git.code.sf.net/p/matlab2csharp/code matlab2csharp-code
+git clone https://git.code.sf.net/p/media/code media-code
+git clone https://git.code.sf.net/p/metatrader4osx/code metatrader4osx-code
+git clone https://git.code.sf.net/p/metztli-reiser4/code metztli-reiser4-code
+git clone https://git.code.sf.net/p/mobile-application-development/code mobile-application-development-code
+git clone https://git.code.sf.net/p/mobiusmandel/code mobiusmandel-code
+git clone https://git.code.sf.net/p/montyhall-m-h-f/code montyhall-m-h-f-code
+git clone https://git.code.sf.net/p/m-m-s/code m-m-s-code
+git clone https://git.code.sf.net/p/music-download/code music-download-code
+git clone https://git.code.sf.net/p/m-plagesmed/code m-plagesmed-code
+git clone https://git.code.sf.net/p/m-periodictable/code m-periodictable-code
+git clone https://git.code.sf.net/p/mbibek/code mbibek-code
+git clone https://git.code.sf.net/p/mbibekjana/code mbibekjana-code
+git clone https://git.code.sf.net/p/matlab-emacs/src matlab-emacs-src
+
+https://gitlab.com/LeQuangHoa/movies.git
+https://gitlab.com/vuthingoccham/my-project.git
+https://gitlab.com/thegitone23/MindTheWord.git
+https://gitlab.com/nicht/merlin.git
+https://gitlab.com/tiaod/moleculer-io.git
+https://gitlab.com/andriputra/mockup_slice.git
+https://gitlab.com/luismnzr/madydaily.git
+https://gitlab.com/flx42/mps.git
+https://gitlab.com/nvidia/mps.git
+https://gitlab.com/LuciaDev/metin2.git
+https://gitlab.com/xsearch/mist.git
+https://gitlab.com/hstefan/multi-python-bazel.git
+https://gitlab.com/mdd1321/mysql.git
+https://gitlab.com/micahswitzer/MonoalphaCracker.git
+https://gitlab.com/Beauclair/my-documentation-ptc.git
+https://gitlab.com/Baatthew/memories.git
+https://gitlab.com/UbikBSD/Xorg/makedepend.git
+https://gitlab.com/UbikBSD/Xorg/macros.git
+https://gitlab.com/mateusz.mironiuk.programming/myorm.git
+https://gitlab.com/simplyshipley/mbta.git
+https://gitlab.com/Nicd/mebe-2.git
+https://gitlab.com/patrick.neulichedl/map-reduce-word-counter.git
+https://gitlab.com/Aetsmtl/my-documentation-ptc.git
+https://gitlab.com/briandfoy/MyCPAN-Reports.git
+https://gitlab.com/briandfoy/mycpan-indexer.git
+https://gitlab.com/briandfoy/mycpan-app-dpan.git
+https://gitlab.com/briandfoy/mta_bus_time.git
+https://gitlab.com/briandfoy/mojolicious-plugin-authorization.git
+https://gitlab.com/briandfoy/mojobake.git
+https://gitlab.com/briandfoy/mojolicious.io.git
+https://gitlab.com/briandfoy/MojoBook.git
+https://gitlab.com/briandfoy/mojo-promise-role-higherorder.git
+https://gitlab.com/briandfoy/mojo-ua-test-server.git
+https://gitlab.com/briandfoy/mojo-options-test.git
+https://gitlab.com/briandfoy/mojo.git
+https://gitlab.com/briandfoy/modulino-demo.git
+https://gitlab.com/briandfoy/module_templates.git
+https://gitlab.com/briandfoy/module-starter-addmodule.git
+https://gitlab.com/briandfoy/module-release-git.git
+https://gitlab.com/briandfoy/module-extract-use.git
+https://gitlab.com/briandfoy/module-release.git
+https://gitlab.com/briandfoy/module-extract-version.git
+https://gitlab.com/briandfoy/module-extract-namespaces.git
+https://gitlab.com/briandfoy/module-extract-declaredminimumperl.git
+https://gitlab.com/briandfoy/module-extract-declaredversion.git
+https://gitlab.com/briandfoy/math-nocarry.git
+https://gitlab.com/briandfoy/mac-propertylist.git
+https://gitlab.com/briandfoy/mac-errors.git
+https://gitlab.com/briandfoy/mac-osversion.git
+https://gitlab.com/Datalux/mylatino.git
