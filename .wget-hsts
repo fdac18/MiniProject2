@@ -1,6 +1,0 @@
-# HSTS 1.0 Known Hosts database for GNU Wget.
-# Edit at your own risk.
-# <hostname>[:<port>]	<incl. subdomains>	<created>	<max-age>
-ia600107.us.archive.org	0	0	1539975335	43200
-ia800107.us.archive.org	0	0	1540050294	43200
-archive.org	0	0	1539975334	7776000
